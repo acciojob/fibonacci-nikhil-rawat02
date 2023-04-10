@@ -1,12 +1,20 @@
 function fibonacci(num) {
-	if(num == 0){
-		return 0;
+
+	if(num <= 1){
+		console.log(num);
+		return;
 	}
-	else if(num <= 2){
-		return 1;
+	let n1 = 0;
+	let n2 =1;
+	var next = 0;
+	var number = parseInt(num);
+	for(i =2;i <=number ; i++){
+		next = n1+n2;
+		n1 = n2;
+		n2 = next;
+	
 	}
-	return fibonacci(num -1 ) + fibonacci(num - 2);
-// your code here
+	console.log(next);
 }
 
 module.exports = fibonacci;
