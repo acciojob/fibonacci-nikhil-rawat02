@@ -1,8 +1,8 @@
 function fibonacci(num) {
 
 	if(num <= 1){
-		console.log(num);
-		return;
+		
+		return num;
 	}
 	let n1 = 0;
 	let n2 =1;
@@ -14,7 +14,7 @@ function fibonacci(num) {
 		n2 = next;
 	
 	}
-	console.log(next);
+	return next;
 }
 
 module.exports = fibonacci;
